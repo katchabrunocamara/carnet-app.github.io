@@ -1,0 +1,143 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 3rem 0;
+    background-color: hsla(355, 67%, 46%, 0.801);
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.container{
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(100,100, 111,0.2) 0px 7px 29px 0px;
+    padding: 2rem;
+    background-color: white;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: hsla(355, 69%, 45%, 0.952);
+}
+.section{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.input{
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+#todoInput{
+    padding-left: 1rem;
+    flex: 1;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+#submitBtn,
+.todo.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+
+}
+
+.todo{
+    display: flex;
+    background-color: rgb(236, 236, 236);
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    
+}
+
+.todo p{
+    display: flex;
+    align-items: center;
+    flex:1;
+    padding: 0.5rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.todo .btn{
+    font-size:25px;
+    background-color: hsla(355, 67%, 46%, 0.801);
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 5px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:4rem;
+}
+
+#todoNb{
+    color: rgb(201, 35, 13);
+}
+
+#delecteAll{
+    padding: 0.5rem 1.2rem;
+}
+.btn{
+   cursor: pointer; 
+   border: none;
+   background-color: darkcyan;
+   color: white;
+   transition: all 0.4 ease;
+   border-radius: 5px;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+}
+.btn:active{
+    transform: translatey(1px); 
+}
+
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container{
+        width: 100%;
+        margin: 0 1rem;
+    }
+    .bottom{
+        flex-direction: column;
+    }
+
+    .bottom p{
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .section{
+        width: 100%;
+        margin: 1rem;
+    }
+}
